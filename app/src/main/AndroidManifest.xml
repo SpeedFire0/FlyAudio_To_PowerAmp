@@ -16,6 +16,10 @@
             android:name="xposeddescription"
             android:value="Launches PowerAmp instead of standard audio player on FlyAudio car head units" />
 
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
