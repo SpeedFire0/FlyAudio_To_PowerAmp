@@ -17,9 +17,14 @@
             android:value="Launches PowerAmp instead of standard audio player on FlyAudio car head units" />
 
         <service
-            android:name=".MyService"
+            android:name=".RunService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="ru.speedfire.flytopower.RunService" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
